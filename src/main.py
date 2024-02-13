@@ -44,7 +44,7 @@ def main() -> None:
             output_result: str = output(result, runtime, data.matrix, data.sequences)
         else:
             output_result: str = output(result, runtime)
-        print(output_result)
+        print("\n" + output_result + "\n")
         output_to_file(output_result)
 
 
@@ -122,7 +122,7 @@ def load_data_from_input() -> Data:
     data.buffer_size = int(answer["buffer_size"])
     data.matrix_width, data.matrix_height = map(int, answer["matrix_size"].split())
     data.number_of_sequences = int(answer["number_of_sequences"])
-    tokens = answer["tokens"].split()
+    tokens: List[str] = answer["tokens"].split()
 
     data.matrix = [
         [random.choice(tokens) for _ in range(data.matrix_width)]
