@@ -2,6 +2,8 @@
 
 Cyberpunk 2077 Breach Protocol is a hacking minigame in the video game Cyberpunk 2077. This minigame is a simulation of local network hacking from ICE (Intrusion Countermeasures Electronics) in the game Cyberpunk 2077.
 
+This program is using brute force method.
+
 ## Run Locally
 
 Clone the project
