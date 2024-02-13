@@ -1,5 +1,4 @@
 from __future__ import print_function, unicode_literals
-from token import OP
 from PyInquirer import prompt
 from typing import List, Tuple, Set, Dict, Optional
 import time
