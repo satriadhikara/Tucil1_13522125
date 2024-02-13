@@ -88,32 +88,32 @@ def load_data_from_input() -> Data:
         {
             "type": "input",
             "name": "tokens",
-            "message": "Enter the tokens",
+            "message": "Enter the tokens:",
             "validate": lambda val: len(val.split()) == number_of_unique_token,
         },
         {
             "type": "input",
             "name": "buffer_size",
-            "message": "Enter the buffer size",
+            "message": "Enter the buffer size:",
             "validate": lambda val: val.isdigit() and int(val) > 0,
         },
         {
             "type": "input",
             "name": "matrix_size",
-            "message": "Enter the matrix size (m x n)",
+            "message": "Enter the matrix size (m x n):",
             "validate": lambda val: len(val.split()) == 2
             and all(i.isdigit() for i in val.split()),
         },
         {
             "type": "input",
             "name": "number_of_sequences",
-            "message": "Enter the number of sequences",
+            "message": "Enter the number of sequences:",
             "validate": lambda val: val.isdigit() and int(val) > 0,
         },
         {
             "type": "input",
             "name": "max_size_sequence",
-            "message": "Enter the maximum size of the sequence",
+            "message": "Enter the maximum size of the sequence:",
             "validate": lambda val: val.isdigit() and int(val) > 1,
         },
     ]
