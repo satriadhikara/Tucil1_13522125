@@ -161,8 +161,7 @@ def output(
                 " ".join(token.ljust(max_length) for token in sequence.tokens) + "\n"
             )
             outcome += f"{sequence.reward}\n"
-
-    outcome += "\n"
+        outcome += "\n"
 
     outcome += f"{result[1]}\n"
     for token in result[0]:
