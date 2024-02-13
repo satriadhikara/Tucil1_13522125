@@ -55,7 +55,9 @@ Deactivate the virtual environment
   deactivate
 ```
 
-## Usage/Examples Input From File
+## Usage/Examples Input
+
+- File
 
 ```txt
 7                 # buffer size
@@ -75,7 +77,7 @@ BD 1C BD 55
 30
 ```
 
-## Usage/Examples Input From Terminal
+- Terminal
 
 ```bash
 ? Number of unique token?                 5
